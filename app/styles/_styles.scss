@@ -3,47 +3,29 @@ body {
     font-family: $mainFont;
 }
 
-.Page-wrapper {
-    width: 800px;
-    margin: auto;
+#stars-frame .glyphicon {
+    margin: 0.3em;
+    font-size: 1.75em;
+}
+    
+#stars-frame #stars-frame {
+    margin: 0.3em;
+    font-size: 1.75em;
 }
 
-section {
-    width: 500px;
-    margin-right: 20px;
-}
 
-aside {
-    width: 280px;
-}
-
-/* Accordion */
-.Accordion {
-
-    & dt.Accordion-header {
-        background-color: $lightGrey;
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
-
-    & dd.Accordion-content {
-        background-color: $bgGrey;
-    }
-
-    & dd.Accordion-content.is-open {
-        display: block;
-    }
-
-    & dd.Accordion-content.is-close {
-        display: none;
-    }
-}
-
-/* Utilities */
-.u-floatLeft {
+#button-frame {
+    width: 20%;
     float: left;
+    text-align: center;
 }
 
-.u-error {
-    color: $redError;
+#numbers-frame .number {
+	display: inline-block;
+	margin: 0.5em;
+	backgound-color: #bbb;
+	width: 30px;
+	text-align: center;
+	font-size: 22px;
+	border-radius: 50%;
 }
