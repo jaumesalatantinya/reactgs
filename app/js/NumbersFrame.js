@@ -2,14 +2,19 @@ import React from 'react';
 
 class NumbersFrame extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
     }
 
     render() {
-        let numbers = [];
+        let numbers = [], className;
         for (let i=1; i<=9; i++) {
-            numbers.push(<div key={i} className="number">{i}</div>);
+            className = 'numbers selected-' + (this.props.selectedNumbers.indexOf(i)>=0)
+            numbers.push(
+                <div key={i} className="number">
+                    {i}
+                </div>
+                );
         }
         return (
             <div id="numbers-frame">

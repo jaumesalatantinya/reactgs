@@ -3,12 +3,12 @@ body {
     font-family: $mainFont;
 }
 
-#stars-frame .glyphicon {
+.glyphicon {
     margin: 0.3em;
     font-size: 1.75em;
 }
     
-#stars-frame #stars-frame {
+#stars-frame {
     margin: 0.3em;
     font-size: 1.75em;
 }
@@ -20,7 +20,7 @@ body {
     text-align: center;
 }
 
-#numbers-frame .number {
+.number, #answer-frame .well span {
 	display: inline-block;
 	margin: 0.5em;
 	backgound-color: #bbb;
@@ -28,4 +28,10 @@ body {
 	text-align: center;
 	font-size: 22px;
 	border-radius: 50%;
+}
+
+#numbers-frame .selected-true {
+    backgound-color: #e8e8e8;
+    color: #ddd;
+    cursor: not-allowed;
 }

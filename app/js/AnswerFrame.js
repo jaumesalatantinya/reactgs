@@ -10,7 +10,7 @@ class AnswerFrame extends React.Component {
         return (
             <div id="answer-frame">
                 <div className="well">
-                    ...
+                    {this.props.selectedNumbers}
                 </div>
             </div>
         );

@@ -8,7 +8,13 @@ class Game extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {selectedNumbers: [3, 6]};
+    }
+
+    clickNumber (clickedNumber) {
+        this.setState(
+            {selectedNumbers: this.state.selectedNubmers.concat(clickedNumber)}
+        );
     }
     
     render() {
@@ -19,9 +25,9 @@ class Game extends React.Component {
                 <div className="clearfix">
                     <StarsFrame />
                     <ButtonFrame />
-                    <AnswerFrame />
+                    <AnswerFrame selectedNumbers={this.state.selectedNumbers} />
                 </div>
-                <NumbersFrame />
+                <NumbersFrame selectedNumbers={this.state.selectedNumbers} />
             </div>
         );
     }
