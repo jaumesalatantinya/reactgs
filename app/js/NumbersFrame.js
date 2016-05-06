@@ -11,7 +11,7 @@ class NumbersFrame extends React.Component {
         for (let i=1; i<=9; i++) {
             className = 'numbers selected-' + (this.props.selectedNumbers.indexOf(i)>=0)
             numbers.push(
-                <div key={i} className="number">
+                <div key={i} className="number" onClick={clickNubmer(i)}>
                     {i}
                 </div>
                 );
